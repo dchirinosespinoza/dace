@@ -1,0 +1,262 @@
+﻿
+@using Release.Helper.WebKoMvc.Extensions
+
+<style>
+    body {
+        /*background-image: url('images/GESTORPLUS-back.jpg');*/
+        background-color: #cccccc;
+        background-image: linear-gradient(gray, white);
+    }
+
+    .login_btn {
+        width: 100%;
+        background: #c0392b !important;
+        color: white !important;
+    }
+
+        .login_btn:focus {
+            box-shadow: none !important;
+            outline: 0px !important;
+        }
+
+    .login_container {
+        padding: 0 2rem;
+    }
+
+    .input-group-addon {
+        color: white !important;
+        background-color: #c0392b !important;
+    }
+
+    .input_user, .input_pass:focus {
+        box-shadow: none !important;
+        outline: 0px !important;
+    }
+
+    .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: #c0392b !important;
+    }
+</style>
+@*<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>*@
+<body>
+
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xsx-6">
+                    <div class="serviceBox">
+                        <div class="service-icon">
+                            @*<span><i class="fa fa-id-card-o"></i></span>*@
+                            <span><i class="fagestorplus"><img src="~/images/trophy.png" /></i></span>
+                        </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Sport</h3>
+                                <p class="description">Gestión deportiva para instituciones y profesionales del deporte, registro de torneos, generación de fixtures, rankings, seguimiento de deportistas. </p>
+                                <a href="@Html.ResourcePath("GestorSport/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox green">
+                            <div class="service-icon">
+                                <span><i class="fagestorplus"><img src="~/images/gymnasium.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor GYM</h3>
+                                <p class="description">Gestión de gimnasios, afiliaciones, trainers, clases, rutinas. </p>
+                                <a href="@Html.ResourcePath("GestorGYM/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox orange">
+                            <div class="service-icon">
+                                <span><i class="fagestorplus"><img src="~/images/rest_area.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Club</h3>
+                                <p class="description">Gestión de clubes y organizaciones sociales, afiliaciones, trabajadores, eventos, áreas, sedes, cuotas, servicios.</p>
+                                <a href="@Html.ResourcePath("GestorClub/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox blue">
+                            <div class="service-icon">
+                                <span><i class="fagestorplus"><img src="~/images/hotel.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Hotel</h3>
+                                <p class="description">Gestión de reservas (clientes y habitaciones), eventos, salones, servicios, personal, sedes</p>
+                                <a href="@Html.ResourcePath("GestorHotel/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox">
+                            <div class="service-icon">
+                                <span><i class="fagestorplus"><img src="~/images/delivery_report.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Reparto</h3>
+                                <p class="description">Gestiona los pedidos de tus clientes y el reparto, ofrece tus productos y servicios. <br>Delivery y Courier. </p>
+                                <a href="@Html.ResourcePath("GestorDelivery/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox green">
+                            <div class="service-icon">
+                                <span><i class="fagestorplus"><img src="~/images/nurse.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Consultorio</h3>
+                                <p class="description">Registra pacientes, personal médico, prescripciones, historias clínicas y gestiona las citas de pacientes. </p>
+                                <a href="@Html.ResourcePath("GestorConsultorio/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox orange">
+                            <div class="service-icon">
+                                <span><i class="fagestorplus"><img src="~/images/cappuccino.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Café</h3>
+                                <p class="description">Gestión de restaurantes, cafeterias, atención y toma de órdenes.</p>
+                                <a href="@Html.ResourcePath("GestorCafe/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox blue">
+                            <div class="service-icon">
+                                <span><i class="fagestorplus"><img src="~/images/tool_kit.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Mantenimiento</h3>
+                                <p class="description">Ideal para la gestión de locales donde se tenga que llevar el registro del control de pagos por mantenmiento como son condominios o edificios o centros comerciales.</p>
+                                <a href="@Html.ResourcePath("Tutorial/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox">
+                            <div class="service-icon">
+                                <span><i class="fagestorplus"><img src="~/images/customer_relations.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Cliente</h3>
+                                <p class="description">Gestión de cartera de clientes. </p>
+                                <a href="@Html.ResourcePath("GestorCliente/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox green">
+                            <div class="service-icon">
+                                <span><i><img src="~/images/study.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Académico</h3>
+                                <p class="description">Gestión de instituciones educativas, registro de alumnos, profesores, cursos, notas... </p>
+                                <a href="@Html.ResourcePath("GestorAcademico/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox orange">
+                            <div class="service-icon">
+                                <span><i><img src="~/images/availability.png" /></i></span>
+                                <span><i class="fagestorplus"><img src="~/images/availability.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Stock</h3>
+                                <p class="description">Ideal para negocios, empresas o cualquier institución que desee llevar el control de productos o bienes.</p>
+                                <a href="@Html.ResourcePath("GestorStock/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xsx-6">
+                        <div class="serviceBox blue">
+                            <div class="service-icon">
+                                <span><i class="fagestorplus"><img src="~/images/access_control.png" /></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h3 class="title">Gestor Acceso</h3>
+                                <p class="description">Gestión y control de acceso o asistencia.</p>
+                                <a href="@Html.ResourcePath("Tutorial/Index")" class="read-more fa fa-plus" data-toggle="tooltip" title="Read More"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*<div class="col-sm-6 col-sm-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">LOGIN</div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-user"></span>
+                                        </div>
+                                        <input type="text" name="" class="form-control input_user" value="" placeholder="username">
+                                    </div>
+                                </div>
+                            </div> <br />
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-key"></span>
+                                        </div>
+                                        <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+                                    </div>
+                                </div>
+                            </div> <br />
+                            <div class="row">
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                            <label class="custom-control-label" for="customControlInline">Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2 col-sm-offset-5">
+                                    <a class="btn btn-danger" href="@Html.ResourcePath("Comprobante/Index")" role="button" data-bind="click : login">Login</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel-footer">Panel Footer</div>
+                </div>
+            </div>*@
+
+</body>
+
+
+@section scripts {
+    @Html.InitPageMainModule("views/home/index")
+}

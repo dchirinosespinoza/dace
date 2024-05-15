@@ -1,0 +1,11 @@
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\bin\Debug\Prod.COMPA.Datos.dll.config
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\bin\Debug\Prod.COMPA.Datos.dll
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\bin\Debug\Prod.COMPA.Datos.pdb
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\bin\Debug\EntityFramework.dll
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\bin\Debug\EntityFramework.xml
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\obj\Debug\Prod.COMPA.Datos.csproj.CoreCompileInputs.cache
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\obj\Debug\Prod.COMPA.Datos.csproj.CopyComplete
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\obj\Debug\Prod.COMPA.Datos.dll
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Datos\obj\Debug\Prod.COMPA.Datos.pdb

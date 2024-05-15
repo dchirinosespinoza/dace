@@ -1,0 +1,6 @@
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Enumerados\bin\Prod.COMPA.Enumerados.dll
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Enumerados\bin\Prod.COMPA.Enumerados.pdb
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Enumerados\obj\Debug\Prod.COMPA.Enumerados.csprojAssemblyReference.cache
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Enumerados\obj\Debug\Prod.COMPA.Enumerados.csproj.CoreCompileInputs.cache
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Enumerados\obj\Debug\Prod.COMPA.Enumerados.dll
+D:\David\Sistema COMPA\MapDB\Prod.COMPA.Enumerados\obj\Debug\Prod.COMPA.Enumerados.pdb

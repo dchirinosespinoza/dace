@@ -1,0 +1,23 @@
+﻿
+@using Release.Helper.WebKoMvc.Extensions
+
+<ol class="breadcrumb">
+    <li><a href="@Html.ResourcePath("Home/Index")">Inicio</a></li>
+    <li class="active">Register</li>
+</ol>
+<!--CABECERA-->
+<div class="row">
+    <div class="col-sm-8">
+        <div class="page-header-custom">
+            <h1 class="title-custom">Registro de Nuevo Usuario</h1>
+        </div>
+    </div>    
+</div>
+
+<app-register-form params="modelParent: $root"></app-register-form>
+
+
+
+@section scripts {
+    @Html.InitPageMainModule("views/register/index")
+}

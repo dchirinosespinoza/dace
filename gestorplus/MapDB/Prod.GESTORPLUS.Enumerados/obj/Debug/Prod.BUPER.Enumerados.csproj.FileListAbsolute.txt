@@ -1,0 +1,12 @@
+D:\David\Sistema BUPER\MapDB\Prod.BUPER.Enumerados\bin\Prod.BUPER.Enumerados.dll
+D:\David\Sistema BUPER\MapDB\Prod.BUPER.Enumerados\bin\Prod.BUPER.Enumerados.pdb
+D:\David\Sistema BUPER\MapDB\Prod.BUPER.Enumerados\obj\Debug\Prod.BUPER.Enumerados.csprojAssemblyReference.cache
+D:\David\Sistema BUPER\MapDB\Prod.BUPER.Enumerados\obj\Debug\Prod.BUPER.Enumerados.csproj.CoreCompileInputs.cache
+D:\David\Sistema BUPER\MapDB\Prod.BUPER.Enumerados\obj\Debug\Prod.BUPER.Enumerados.dll
+D:\David\Sistema BUPER\MapDB\Prod.BUPER.Enumerados\obj\Debug\Prod.BUPER.Enumerados.pdb
+D:\David\Sistema COMPA\MapDB\Prod.BUPER.Enumerados\bin\Prod.BUPER.Enumerados.dll
+D:\David\Sistema COMPA\MapDB\Prod.BUPER.Enumerados\bin\Prod.BUPER.Enumerados.pdb
+D:\David\Sistema COMPA\MapDB\Prod.BUPER.Enumerados\obj\Debug\Prod.BUPER.Enumerados.csprojAssemblyReference.cache
+D:\David\Sistema COMPA\MapDB\Prod.BUPER.Enumerados\obj\Debug\Prod.BUPER.Enumerados.csproj.CoreCompileInputs.cache
+D:\David\Sistema COMPA\MapDB\Prod.BUPER.Enumerados\obj\Debug\Prod.BUPER.Enumerados.dll
+D:\David\Sistema COMPA\MapDB\Prod.BUPER.Enumerados\obj\Debug\Prod.BUPER.Enumerados.pdb

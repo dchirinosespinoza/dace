@@ -1,0 +1,59 @@
+﻿
+@using Release.Helper.WebKoMvc.Extensions
+
+<ol class="breadcrumb">
+    <li class="active">Inicio</li>
+</ol>
+<div class="jumbotron banner-principal">
+    <div class="container">
+        <h1>Bienvenido</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-search fa-5x icon-acceso"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">Búsqueda y Registro de Comprobantes de Pago.</div>
+                    </div>
+                </div>
+            </div>
+            <a href="@Html.ResourcePath("Comprobante/Index")">
+                <div class="panel-footer">
+                    <span class="pull-left">Ingresar</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6" id="div_prestamo">
+        <div class="panel panel-green">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-pencil-square-o fa-5x icon-acceso"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">Registro de Préstamos de Comprobantes de Pago.</div>
+                    </div>
+                </div>
+            </div>
+            <a href="@Html.ResourcePath("Prestamo/Index")">
+                <div class="panel-footer">
+                    <span class="pull-left">Ingresar</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    @Html.InitPageMainModule("views/home/index")
+}

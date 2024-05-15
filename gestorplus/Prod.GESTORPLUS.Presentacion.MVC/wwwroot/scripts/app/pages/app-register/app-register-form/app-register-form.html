@@ -1,0 +1,42 @@
+﻿
+<div class="panel panel-default panel-custom">
+    <div class="panel-heading">
+        Registro de Usuario
+    </div>
+    <div class="panel-body">
+        <div class="form-horizontal">
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese nombre del usuario" data-bind="value:modelParent.Datos.Nombre">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="">Apellido Paterno</label>
+                    <input type="text" class="form-control" id="txtApePat" placeholder="Ingrese Apellido Paterno del usuario" data-bind="value:modelParent.Datos.ApePaterno">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="">Apellido Materno</label>
+                    <input type="text" class="form-control" id="txtApeMat" placeholder="Ingrese Apellido Materno del usuario" data-bind="value:modelParent.Datos.ApeMaterno">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" id="txtApeMat" placeholder="Ingrese Email del usuario" data-bind="value:modelParent.Datos.Email">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+        </div>
+
+    </div>
+    <div class="panel-footer text-center">
+        <button type="button" class="btn btn-primary-custom" data-bind="click:Guardar"><i class="fa fa-save" aria-hidden="true"></i> Save</button>
+        <button type="button" class="btn btn-default-custom" data-bind="click:Reset"><i class="fa fa-sign-out" aria-hidden="true"></i> Cancel</button>
+    </div>
+</div>

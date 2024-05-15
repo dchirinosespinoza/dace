@@ -1,0 +1,5 @@
+D:\David\GESTOR\MapDB\Prod.GESTOR.Enumerados\bin\Prod.Gestor.Enumerados.dll
+D:\David\GESTOR\MapDB\Prod.GESTOR.Enumerados\bin\Prod.Gestor.Enumerados.pdb
+D:\David\GESTOR\MapDB\Prod.GESTOR.Enumerados\obj\Debug\Prod.GESTOR.Enumerados.csproj.CoreCompileInputs.cache
+D:\David\GESTOR\MapDB\Prod.GESTOR.Enumerados\obj\Debug\Prod.Gestor.Enumerados.dll
+D:\David\GESTOR\MapDB\Prod.GESTOR.Enumerados\obj\Debug\Prod.Gestor.Enumerados.pdb

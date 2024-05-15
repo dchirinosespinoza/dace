@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = Prod.GESTORPLUS.Presentacion.MVC
+build_property.ProjectDir = C:\DACE\gestorplus\Prod.GESTORPLUS.Presentacion.MVC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

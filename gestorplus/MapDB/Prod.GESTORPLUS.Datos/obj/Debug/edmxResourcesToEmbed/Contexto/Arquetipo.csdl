@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Modelo" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ArquetipoDbContext" annotation:LazyLoadingEnabled="false">
+    <EntitySet Name="persona" EntityType="Modelo.persona" />
+    <EntitySet Name="institucion" EntityType="Modelo.institucion" />
+    <EntitySet Name="sede" EntityType="Modelo.sede" />
+    <EntitySet Name="sysdiagrams" EntityType="Modelo.sysdiagrams" />
+    <EntitySet Name="usuario" EntityType="Modelo.usuario" />
+    <AssociationSet Name="FK_sede_institucion" Association="Modelo.FK_sede_institucion">
+      <End Role="institucion" EntitySet="institucion" />
+      <End Role="sede" EntitySet="sede" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuario_institucion" Association="Modelo.FK_usuario_institucion">
+      <End Role="institucion" EntitySet="institucion" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_usuario_persona" Association="Modelo.FK_usuario_persona">
+      <End Role="persona" EntitySet="persona" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
+    <EntitySet Name="rol" EntityType="Modelo.rol" />
+  </EntityContainer>
+  <EntityType Name="persona">
+    <Key>
+      <PropertyRef Name="id_persona" />
+    </Key>
+    <Property Name="id_persona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="usuario" Relationship="Modelo.FK_usuario_persona" FromRole="persona" ToRole="usuario" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="apellido_paterno" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="apellido_materno" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fecha_nacimiento" Type="DateTime" Precision="3" />
+    <Property Name="sexo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="institucion">
+    <Key>
+      <PropertyRef Name="id_institucion" />
+    </Key>
+    <Property Name="id_institucion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="sede" Relationship="Modelo.FK_sede_institucion" FromRole="institucion" ToRole="sede" />
+    <NavigationProperty Name="usuario" Relationship="Modelo.FK_usuario_institucion" FromRole="institucion" ToRole="usuario" />
+  </EntityType>
+  <EntityType Name="sede">
+    <Key>
+      <PropertyRef Name="id_sede" />
+    </Key>
+    <Property Name="id_sede" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_institucion" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="institucion" Relationship="Modelo.FK_sede_institucion" FromRole="sede" ToRole="institucion" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_persona" Type="Int32" Nullable="false" />
+    <Property Name="id_institucion" Type="Int32" />
+    <NavigationProperty Name="institucion" Relationship="Modelo.FK_usuario_institucion" FromRole="usuario" ToRole="institucion" />
+    <NavigationProperty Name="persona" Relationship="Modelo.FK_usuario_persona" FromRole="usuario" ToRole="persona" />
+    <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <Association Name="FK_sede_institucion">
+    <End Type="Modelo.institucion" Role="institucion" Multiplicity="1" />
+    <End Type="Modelo.sede" Role="sede" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="institucion">
+        <PropertyRef Name="id_institucion" />
+      </Principal>
+      <Dependent Role="sede">
+        <PropertyRef Name="id_institucion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuario_institucion">
+    <End Type="Modelo.institucion" Role="institucion" Multiplicity="0..1" />
+    <End Type="Modelo.usuario" Role="usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="institucion">
+        <PropertyRef Name="id_institucion" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="id_institucion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_usuario_persona">
+    <End Type="Modelo.persona" Role="persona" Multiplicity="1" />
+    <End Type="Modelo.usuario" Role="usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="persona">
+        <PropertyRef Name="id_persona" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="id_persona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="rol">
+    <Key>
+      <PropertyRef Name="id_rol" />
+    </Key>
+    <Property Name="id_rol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

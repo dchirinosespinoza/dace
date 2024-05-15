@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jkzafRkIykSEk1EYf7K7lGuS1qleuV3AsfyFSnweAhdfHm/3krVQcVnMjjEiwnwJ8g2cbn9vyHC2V35QxwafQg==",
+  "success": true,
+  "projectFilePath": "C:\\DACE\\gestorplus\\Prod.GESTORPLUS.Enumerados\\Prod.GESTORPLUS.Enumerados.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dchir\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dchir\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

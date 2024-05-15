@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Prod.GESTORPLUS.Enumerados</id>
+    <version>1.0.0</version>
+    <authors>Prod.GESTORPLUS.Enumerados</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\gestorplus\Prod.GESTORPLUS.Enumerados\bin\Debug\netstandard2.0\Prod.GESTORPLUS.Enumerados.dll" target="lib\netstandard2.0\Prod.GESTORPLUS.Enumerados.dll" />
+  </files>
+</package>

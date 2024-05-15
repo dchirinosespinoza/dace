@@ -1,0 +1,12 @@
+D:\David\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\bin\Prod.GESTORPLUS.Enumerados.dll
+D:\David\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\bin\Prod.GESTORPLUS.Enumerados.pdb
+D:\David\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\obj\Debug\Prod.GESTORPLUS.Enumerados.csprojAssemblyReference.cache
+D:\David\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\obj\Debug\Prod.GESTORPLUS.Enumerados.csproj.CoreCompileInputs.cache
+D:\David\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\obj\Debug\Prod.GESTORPLUS.Enumerados.dll
+D:\David\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\obj\Debug\Prod.GESTORPLUS.Enumerados.pdb
+C:\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\bin\Prod.GESTORPLUS.Enumerados.dll
+C:\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\bin\Prod.GESTORPLUS.Enumerados.pdb
+C:\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\obj\Debug\Prod.GESTORPLUS.Enumerados.csproj.AssemblyReference.cache
+C:\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\obj\Debug\Prod.GESTORPLUS.Enumerados.csproj.CoreCompileInputs.cache
+C:\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\obj\Debug\Prod.GESTORPLUS.Enumerados.dll
+C:\gestorplus\MapDB\Prod.GESTORPLUS.Enumerados\obj\Debug\Prod.GESTORPLUS.Enumerados.pdb
