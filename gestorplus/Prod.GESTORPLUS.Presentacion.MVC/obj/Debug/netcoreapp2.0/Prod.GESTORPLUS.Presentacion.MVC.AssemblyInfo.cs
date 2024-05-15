@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prod.GESTORPLUS.Presentacion.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f54e4c14b610cc792afecf85cdaf6a7b182f71b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prod.GESTORPLUS.Presentacion.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prod.GESTORPLUS.Presentacion.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
